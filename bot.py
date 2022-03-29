@@ -7,7 +7,7 @@ import os
 
 
 
-PORT = int(os.environ.get('PORT', 80))
+PORT = int(os.environ.get('PORT', 8443))
 
 def shortenlink(link):
     key = '256a06f4e8402e13975921ab896ad35c18cc9'
@@ -44,9 +44,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-# key = '256a06f4e8402e13975921ab896ad35c18cc9'
-# url = urllib.parse.quote('https://www.youtube.com/channel/UCnblBBmQexTiYz5X66Mcv8w')
-# name  = 'akhy_roi123'
-# r = requests.get('http://cutt.ly/api/api.php?key={}&short={}&name={}'.format(key, url, name))
-# print(r.text)
-# print(r.json()["url"]["shortLink"])
