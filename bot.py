@@ -7,7 +7,7 @@ import os
 
 
 
-PORT = int(os.environ.get('PORT', 8443))
+PORT = int(os.environ.get('PORT', '8443'))
 
 def shortenlink(link):
     key = '256a06f4e8402e13975921ab896ad35c18cc9'
